@@ -27,8 +27,8 @@ apply plugin: 'com.google.gms.google-services'
 // END: FlutterFire Configuration
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
-id("com.google.gms.google-services")
-id("com.google.gms.google-services") version "4.3.15" apply false
+apply plugin: "com.google.gms.google-services"
+// apply plugin:"com.google.gms.google-services" version "4.3.15" apply false
 
 android {
     compileSdkVersion flutter.compileSdkVersion
